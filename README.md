@@ -15,6 +15,11 @@
 - When adding noise you may find ```std::normal_distribution``` and ```std::default_random_engine``` useful.
 
 **Update Weights**:
+- Homogeneous Coordinates transformation
+- Associate: nearest landmark
+- Update weights: multi-varience density function
+
+
 - **Data Association**: Find the predicted measurement that is closest to each observed measurement and assign the observed measurement to this particular landmark.
 - Update the weights of each particle using a mult-variate Gaussian distribution. 
 - The observations are given in the VEHICLE'S coordinate system. Your particles are located according to the MAP'S coordinate system. You will need to transform between the two systems. Keep in mind that this transformation requires both rotation AND translation (but no scaling).  
