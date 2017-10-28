@@ -2,10 +2,12 @@
 
 
 **Initialization**:
-- Set the number of particles. 
+- Set the number of particles. 100 is good enough.
 - Initialize all particles to first position (based on estimates of x, y, theta and their uncertainties from GPS)
-- Selt all weights to 1. 
-- Add random Gaussian noise to each particle.
+- Set all weights to 1. 
+- Add random Gaussian noise to each particle. We will use following two C++ libraries to accomplish this:
+    - [C++ standard library normal distribution](http://en.cppreference.com/w/cpp/numeric/random/normal_distribution) 
+    - [C++ standard library random engine](http://www.cplusplus.com/reference/random/default_random_engine/)
 
 **Prediction**:
 - Prediction predicts the state for the next time step using the process model.
