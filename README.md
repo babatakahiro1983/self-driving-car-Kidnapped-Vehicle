@@ -15,7 +15,7 @@
 - When adding noise you may find ```std::normal_distribution``` and ```std::default_random_engine``` useful.
 
 **Update Weights**:
-- Homogeneous Coordinates transformation: Transformed Observation (x_map,y_map) = func(x_particle, y_particle, heading_particle, x_obs, y_obs)
+- Homogeneous transformation: Transformed Observation (x_map,y_map) = func(x_particle, y_particle, heading_particle, x_obs, y_obs)
 - Associate: nearest landmark
 - Update weights: multi-varience density function
 
