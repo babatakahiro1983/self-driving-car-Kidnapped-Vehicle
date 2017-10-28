@@ -10,9 +10,9 @@
 - Set each particle weight to 1. 
 
 **Prediction**:
-- Prediction predicts the state for the next time step using the process model.
+- Predicts the state for the next time step using the Motion model based on Yaw rate and velocity while accounting sensor noise.
 - Add measurements to each particle and add random Gaussian noise.
-- When adding noise you may find std::normal_distribution and std::default_random_engine useful.
+- When adding noise you may find ```std::normal_distribution``` and ```std::default_random_engine``` useful.
 
 **Update Weights**:
 - **Data Association**: Find the predicted measurement that is closest to each observed measurement and assign the observed measurement to this particular landmark.
