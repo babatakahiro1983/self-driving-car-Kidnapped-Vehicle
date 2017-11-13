@@ -8,6 +8,13 @@
     - [C++ standard library normal distribution](http://en.cppreference.com/w/cpp/numeric/random/normal_distribution) 
     - [C++ standard library random engine](http://www.cplusplus.com/reference/random/default_random_engine/)
 - Set each particle weight to 1. 
+- sample particles data:
+```
+Sample 1 0 6.29261 2.25289 0.0109327 1
+Sample 2 1 6.00315 1.72504 0.0180484 1
+Sample 3 2 6.33928 2.18636 0.0318468 1
+Sample 4 3 6.17121 2.10781 0.0143172 1
+```
 
 **Prediction**:
 - Predicts the state for the next time step using the Motion model based on Yaw rate and velocity while accounting sensor noise FOR each particle. _In other words, the 100 particles are moving_.
