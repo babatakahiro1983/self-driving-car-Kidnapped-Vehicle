@@ -10,7 +10,7 @@
 - Set each particle weight to 1. 
 
 **Prediction**:
-- Predicts the state for the next time step using the Motion model based on Yaw rate and velocity while accounting sensor noise.
+- Predicts the state for the next time step using the Motion model based on Yaw rate and velocity while accounting sensor noise FOR each particle. _In other words, the 100 particles are moving_.
 - Add measurements to each particle and add random Gaussian noise.
 - When adding noise you may find ```std::normal_distribution``` and ```std::default_random_engine``` useful.
 
