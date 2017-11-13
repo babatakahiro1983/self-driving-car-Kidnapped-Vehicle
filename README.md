@@ -2,7 +2,7 @@
 
 
 **Initialization**:
-- Set the number of particles. 100 is good enough.
+- Set a certain number of particles around the GPS measurement. 100 is good enough.
 - Initialize all particles to first position (based on estimates of x, y, theta and their uncertainties from GPS)
 - Add random Gaussian noise to each particle. We will use following two C++ libraries to accomplish this:
     - [C++ standard library normal distribution](http://en.cppreference.com/w/cpp/numeric/random/normal_distribution) 
