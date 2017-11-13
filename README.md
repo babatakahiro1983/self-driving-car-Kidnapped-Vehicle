@@ -1,4 +1,6 @@
 # self-driving-car-Kidnapped-Vehicle
+- [Udacity SDC project 3](https://github.com/udacity/CarND-Kidnapped-Vehicle-Project).
+- Particle filter localization steps: initialization, prediction, weight updates and resample.
 
 
 **Initialization**:
