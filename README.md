@@ -20,6 +20,13 @@ Sample 4 3 6.17121 2.10781 0.0143172 1
 - Predicts the state for the next time step using the Motion model based on Yaw rate and velocity while accounting sensor noise FOR each particle. _In other words, the 100 particles are moving_.
 - Add measurements to each particle and add random Gaussian noise.
 - When adding noise you may find ```std::normal_distribution``` and ```std::default_random_engine``` useful.
+- sameple prediction data:
+```
+Sample 1 0 7.03332 2.57475 0.288935 0
+Sample 2 0 7.07999 2.50822 0.309849 0
+Sample 3 0 7.3762 2.33111 0.281731 0
+Sample 4 0 6.78916 2.13764 0.26845 0
+```
 
 **Update Weights**:
 - Homogeneous transformation: Transformed Observation (x_map,y_map) = func(x_particle, y_particle, heading_particle, x_obs, y_obs)
